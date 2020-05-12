@@ -9,22 +9,61 @@
     <link rel="stylesheet" href="css/style.css">
     <title>SpotifyWeb</title>
   </head>
-  <body>
+  <body class="">
     <!-- Main Wrapper -->
     <main class="cre_main-wrapper">
       <!-- Flex Container -->
       <div class="cre_container-flex">
         <!-- Menù Left -->
         <nav class="cre_menu-left">
-          <div class="cre_padder">
-            <a href="#"><img class="logo" src="img/logo.svg" alt="Logo Spotify"></a>
-            <div class="cre_section">
+          <div class="cre_container-flex cre_padder cre_flex-menu-left">
+            <div class="cre_section cre_top-menu">
+              <a href="#"><img class="logo" src="img/logo.svg" alt="Logo Spotify"></a>
               <ul>
-                <li><a href="#"><img class="icon" src="img/home.svg" alt="Logo Home"><span>Home</span></a></li>
+                <li class="selected"><a href="#"><img class="icon" src="img/home.svg" alt="Logo Home"><span>Home</span></a></li>
                 <li><a href="#"><img class="icon" src="img/search.svg" alt="Logo Search"><span>Cerca</span></a></li>
                 <li><a href="#"><img class="icon" src="img/libreria.svg" alt="Logo Libreria"><span>La tua libreria</span></a></li>
               </ul>
             </div>
+
+            <div class="cre_section playlist">
+              <h3>Playlist</h3>
+              <a class="cre_crea-playlist" href="#">
+                <div class="cre_btn-plus">
+                  <p>+</p>
+                </div>
+                <p>Crea Playlist</p>
+              </a>
+            </div>
+            <div class="cre_scroll-playlists">
+              <ul>
+                <li><a href="#"><span>Nome playlist</span></a></li>
+                <li><a href="#"><span>Nome playlist</span></a></li>
+                <li><a href="#"><span>Nome playlist</span></a></li>
+                <li><a href="#"><span>Nome playlist</span></a></li>
+                <li><a href="#"><span>Nome playlist</span></a></li>
+                <li><a href="#"><span>Nome playlist</span></a></li>
+                <li><a href="#"><span>Nome playlist</span></a></li>
+              </ul>
+            </div>
+
+            <div class="cre_bottom-menu">
+              <div class="cre_bottom-menu-item">
+                <a href="#"><img src="img/download.svg" alt=""><p>Installa app</p></a>
+              </div>
+
+              <hr>
+
+              <div class="cre_bottom-menu-item">
+                <a href="#">
+                  <div class="profile">
+                    <img src="img/profile.svg" alt="">
+                  </div>
+                  <p>John Doe</p>
+                </a>
+              </div>
+            </div>
+
           </div>
         </nav>
         <!-- Menù Left -->
@@ -32,8 +71,22 @@
         <!-- Menù Right Music Library -->
         <section class="cre_music-library">
           <!-- TopBar Music Library -->
-          <nav class="cre_top-bar">
+          <nav class="cre_top-bar cre_container-flex">
+            <a href="#"><p class="cre_btn-upgrade">Effettua l'upgrade</p></a>
           </nav>
+
+          <header class="text-center">
+            <ul class="list-inline">
+              <li><a href="#">In evidenza</a>
+                <div class="selected"></div>
+              </li>
+              <li><a href="#">Podcast</a></li>
+              <li><a href="#">Classifiche</a></li>
+              <li><a href="#">Generi e mood</a></li>
+              <li><a href="#">Nuove uscite</a></li>
+              <li><a href="#">Scopri</a></li>
+            </ul>
+          </header>
           <!-- End TopBar Music Library -->
         </section>
         <!-- End Menù Right Music Library -->

@@ -1,3 +1,7 @@
+.debug .cre_container-flex {
+  background-color: pink;
+}
+
 /* Basic Rules */
 body {
   color: #a3a3a3;
@@ -20,6 +24,11 @@ a:hover {
   color: white;
   text-decoration: none;
 }
+
+hr {
+  margin: 0;
+  padding: 0;
+}
 /* End Basic Rules */
 
 /* Generic Rules */
@@ -32,11 +41,21 @@ a:hover {
 }
 /* End Generic Rules */
 
+/* Buttons */
+.cre_btn-upgrade {
+  text-transform: uppercase;
+  margin-right: 20px;
+  align-content: center;
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+/* End Buttons */
+
 /* Main Wrapper */
 .cre_main-wrapper {
   height: calc( 100vh - 100px );
-  background-color: red;
-  overflow: auto;
 }
 /* End Main Wrapper */
 
@@ -48,14 +67,21 @@ a:hover {
 /* End Flex Container */
 
 /* Menù Left */
+.cre_flex-menu-left {
+  flex-direction: column;
+  height: 100%;
+}
+
 .cre_menu-left {
   height: calc( 100vh - 100px );
   background-color: #000000;
-  flex-basis: 200px;
+  flex-basis: 250px;
+  overflow: hidden;
 }
 
 img.logo {
   width: 150px;
+  padding-bottom: 25px;
 }
 
 img.icon {
@@ -66,9 +92,78 @@ img.icon {
   padding: 5px;
 }
 
-.cre_menu-left span {
+.cre_menu-left li.selected {
+  margin-left: -15px;
+  padding: 5px 5px 5px 15px;
+  border-left: 3px solid #adff2f;
+}
+
+.cre_menu-left .cre_top-menu span {
   vertical-align: middle;
   padding: 0 5px;
+}
+
+.playlist h3 {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: bolder;
+  color: white;
+  text-transform: uppercase;
+}
+
+.cre_crea-playlist {
+  padding: 5px;
+}
+
+.cre_crea-playlist p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cre_crea-playlist .cre_btn-plus {
+  display: inline-block;
+  background-color: grey;
+  color: black;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.cre_crea-playlist .cre_btn-plus p {
+  font-size: 30px;
+}
+
+.cre_scroll-playlists {
+  overflow: auto;
+  flex-basis: 500px;
+}
+
+.cre_bottom-menu a {
+  margin-top: 10px;
+}
+
+.cre_bottom-menu img {
+  width: 15px;
+  display: inline-block;
+}
+
+.cre_bottom-menu p {
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.cre_bottom-menu-item {
+  padding-top: 10px;
+}
+
+.profile {
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  background-color: gray;
+  border-radius: 50%;
 }
 /* End Menù Left */
 
@@ -76,17 +171,39 @@ img.icon {
 .cre_music-library {
   background-color: #141922;
   overflow: auto;
-  flex-basis: calc( 100% - 200px );
+  flex-basis: calc( 100% - 250px );
+  height: calc( 100vh - 100px );
 }
 
 .cre_top-bar {
+  overflow: hidden;
   position: fixed;
   top: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   height: 100px;
-  width:  calc( 100% - 200px );
+  width:  calc( 100% - 250px );
+  flex-direction: row-reverse;
 }
+
+.cre_top-bar a {
+  align-self: center;
+}
+
+header {
+  margin-top: 100px;
+}
+
+header li {
+  padding: 10px 15px;
+}
+
+header .selected {
+  margin: auto;
+  width: 30px;
+  border-bottom: 3px solid #adff2f;
+}
+
 /* End Menù Right Music Library */
 
 /* Footer-Music Player */

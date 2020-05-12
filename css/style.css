@@ -1,0 +1,97 @@
+/* Basic Rules */
+body {
+  color: #a3a3a3;
+  background-color: #141922;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+/* End Basic Rules */
+
+/* Generic Rules */
+.cre_padder {
+  padding: 15px;
+}
+
+.cre_section {
+  padding: 15px 0;
+}
+/* End Generic Rules */
+
+/* Main Wrapper */
+.cre_main-wrapper {
+  height: calc( 100vh - 100px );
+  background-color: red;
+  overflow: auto;
+}
+/* End Main Wrapper */
+
+/* Flex Container */
+.cre_container-flex {
+  width: 100%;
+  display: flex;
+}
+/* End Flex Container */
+
+/* Menù Left */
+.cre_menu-left {
+  height: calc( 100vh - 100px );
+  background-color: #000000;
+  flex-basis: 200px;
+}
+
+img.logo {
+  width: 150px;
+}
+
+img.icon {
+  width: 25px;
+}
+
+.cre_menu-left li {
+  padding: 5px;
+}
+
+.cre_menu-left span {
+  vertical-align: middle;
+  padding: 0 5px;
+}
+/* End Menù Left */
+
+/* Menù Right Music Library */
+.cre_music-library {
+  background-color: #141922;
+  overflow: auto;
+  flex-basis: calc( 100% - 200px );
+}
+
+.cre_top-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100px;
+  width:  calc( 100% - 200px );
+}
+/* End Menù Right Music Library */
+
+/* Footer-Music Player */
+footer {
+  height: 100px;
+  background-color: #282828;
+}
+/* End Footer-Music Player */

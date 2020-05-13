@@ -18,15 +18,18 @@
         <nav class="cre_menu-left">
           <div class="cre_container-flex cre_padder cre_flex-menu-left">
             <div class="cre_section cre_top-menu">
-              <a href="#"><img class="logo" src="img/logo.svg" alt="Logo Spotify"></a>
+
+                <a class="cre_visible-xs text-center" href="#"><img id="cre_logo-xs" src="img/logo-small.svg" alt=""></a>
+
+              <a href="#"><img class="logo cre_hidden-xs" src="img/logo.svg" alt="Logo Spotify"></a>
               <ul>
-                <li class="selected"><a href="#"><img class="icon" src="img/home.svg" alt="Logo Home"><span>Home</span></a></li>
-                <li><a href="#"><img class="icon" src="img/search.svg" alt="Logo Search"><span>Cerca</span></a></li>
-                <li><a href="#"><img class="icon" src="img/libreria.svg" alt="Logo Libreria"><span>La tua libreria</span></a></li>
+                <li class="selected"><a href="#"><img class="icon" src="img/home.svg" alt="Logo Home"><span class="cre_hidden-xs">Home</span></a></li>
+                <li><a href="#"><img class="icon" src="img/search.svg" alt="Logo Search"><span class="cre_hidden-xs">Cerca</span></a></li>
+                <li><a href="#"><img class="icon" src="img/libreria.svg" alt="Logo Libreria"><span class="cre_hidden-xs">La tua libreria</span></a></li>
               </ul>
             </div>
 
-            <div class="cre_section playlist">
+            <div class="cre_section playlist cre_hidden-xs">
               <h3>Playlist</h3>
               <a class="cre_crea-playlist" href="#">
                 <div class="cre_btn-plus">
@@ -35,7 +38,7 @@
                 <p>Crea Playlist</p>
               </a>
             </div>
-            <div class="cre_scroll-playlists">
+            <div class="cre_scroll-playlists cre_hidden-xs">
               <ul>
                 <li><a href="#"><span>Nome playlist</span></a></li>
                 <li><a href="#"><span>Nome playlist</span></a></li>
@@ -47,7 +50,7 @@
               </ul>
             </div>
 
-            <div class="cre_bottom-menu">
+            <div class="cre_bottom-menu cre_hidden-xs">
               <div class="cre_bottom-menu-item">
                 <a href="#"><img src="img/download.svg" alt=""><p>Installa app</p></a>
               </div>
@@ -64,6 +67,17 @@
               </div>
             </div>
 
+            <div class="cre_bottom-menu cre_visible-xs text-center">
+              <a href="#"><img id="cre_download-xs" src="img/download.svg" alt=""></a>
+              <div class="cre_bottom-menu-item">
+                <a href="#">
+                  <div class="profile">
+                    <img src="img/profile.svg" alt="">
+                  </div>
+                </a>
+              </div>
+            </div>
+
           </div>
         </nav>
         <!-- Menù Left -->
@@ -74,7 +88,8 @@
           <nav class="cre_top-bar cre_container-flex">
             <a href="#"><p class="cre_btn-upgrade">Effettua l'upgrade</p></a>
           </nav>
-
+          <!-- End TopBar Music Library -->
+          <!-- Header -->
           <header class="text-center">
             <ul class="list-inline">
               <li><a href="#">In evidenza</a>
@@ -87,7 +102,201 @@
               <li><a href="#">Scopri</a></li>
             </ul>
           </header>
-          <!-- End TopBar Music Library -->
+          <!-- End Header -->
+          <section class="tracks">
+            <div class="cre_title-category">
+              <h2>Recently played</h2>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+
+                <div class="col-xs-6 col-md-3 col-lg-2">
+                  <a href="#">
+                    <div class="cre_single-track">
+                      <div class="cre_relative" >
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <div class="cre_hover-tracks cre_absolute">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cre_title-song text-center">
+                      <h2>Heavy Metal</h2>
+                      <p>Subtitle</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-xs-6 col-md-3 col-lg-2">
+                  <a href="#">
+                    <div class="cre_single-track">
+                      <div class="cre_relative" >
+                        <img src="img/stranger.jpeg" alt="">
+                        <div class="cre_hover-tracks cre_absolute">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cre_title-song text-center">
+                      <h2>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h2>
+                      <p>Kyle Dixon & Michael Stein</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-xs-6 col-md-3 col-lg-2">
+                  <a href="#">
+                    <div class="cre_single-track">
+                      <div class="cre_relative" >
+                        <img src="img/aquietplace.jpeg" alt="">
+                        <div class="cre_hover-tracks cre_absolute">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cre_title-song text-center">
+                      <h2>A quiet place</h2>
+                      <p>Subtitle</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-xs-6 col-md-3 col-lg-2">
+                  <a href="#">
+                    <div class="cre_single-track">
+                      <div class="cre_relative" >
+                        <img src="img/split.jpeg" alt="">
+                        <div class="cre_hover-tracks cre_absolute">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cre_title-song text-center">
+                      <h2>Split</h2>
+                      <p>Subtitle</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-xs-6 col-md-3 col-lg-2">
+                  <a href="#">
+                    <div class="cre_single-track">
+                      <div class="cre_relative" >
+                        <img src="img/cure.jpeg" alt="">
+                        <div class="cre_hover-tracks cre_absolute">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cre_title-song text-center">
+                      <h2>A cure for wellness</h2>
+                      <p>Subtitle</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-xs-6 col-md-3 col-lg-2">
+                  <a href="#">
+                    <div class="cre_single-track">
+                      <div class="cre_relative" >
+                        <img src="img/sinister.jpeg" alt="">
+                        <div class="cre_hover-tracks cre_absolute">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cre_title-song text-center">
+                      <h2>Sinister</h2>
+                      <p>Subtitle</p>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="cre_title-category">
+              <h2>Creato per John Doe</h2>
+              <p>Più ascolti, più acurati saranno i suggerimenti.</p>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+
+                <div class="col-xs-6 col-md-3 col-lg-2">
+                  <a href="#">
+                    <div class="cre_single-track">
+                      <div class="cre_relative" >
+                        <img src="img/radar.jpeg" alt="">
+                        <div class="cre_hover-tracks cre_absolute">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cre_title-song text-center">
+                      <h2>Release Radar</h2>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-xs-6 col-md-3 col-lg-2">
+                  <a href="#">
+                    <div class="cre_single-track">
+                      <div class="cre_relative" >
+                        <img src="img/mixdaily.jpeg" alt="">
+                        <div class="cre_hover-tracks cre_absolute">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cre_title-song text-center">
+                      <h2>Daily Mix 1</h2>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="cre_title-category">
+              <h2>Artisti più popolari</h2>
+              <p>Più ascolti, più acurati saranno i suggerimenti.</p>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+
+                <div class="col-xs-6 col-md-3 col-lg-2">
+                  <a href="#">
+                    <div class="cre_single-track">
+                      <div class="cre_relative" >
+                        <img class="cre_rounded" src="img/youg.jpeg" alt="">
+                        <div class="cre_hover-tracks cre_absolute cre_rounded">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cre_title-song text-center">
+                      <h2>Lana del Rey</h2>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-xs-6 col-md-3 col-lg-2">
+                  <a href="#">
+                    <div class="cre_single-track">
+                      <div class="cre_relative" >
+                        <img class="cre_rounded" src="img/einaudi.jpeg" alt="">
+                        <div class="cre_hover-tracks cre_absolute cre_rounded">
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cre_title-song text-center">
+                      <h2>Ludovico Einaudi</h2>
+                    </div>
+                  </a>
+                </div>
+          </section>
+
         </section>
         <!-- End Menù Right Music Library -->
       </div>

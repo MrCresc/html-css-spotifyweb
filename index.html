@@ -83,7 +83,7 @@
         <!-- Menù Left -->
 
         <!-- Menù Right Music Library -->
-        <section class="cre_music-library">
+        <div class="cre_music-library">
           <!-- TopBar Music Library -->
           <nav class="cre_top-bar cre_container-flex">
             <a href="#"><p class="cre_btn-upgrade">Effettua l'upgrade</p></a>
@@ -103,6 +103,8 @@
             </ul>
           </header>
           <!-- End Header -->
+
+          <!-- Tracks -->
           <section class="tracks">
             <div class="cre_title-category">
               <h2>Recently played</h2>
@@ -295,9 +297,11 @@
                     </div>
                   </a>
                 </div>
+              </div>
+            </div>
           </section>
-
-        </section>
+          <!-- End Tracks -->
+        </div>
         <!-- End Menù Right Music Library -->
       </div>
       <!-- End Flex Container -->
@@ -306,6 +310,7 @@
 
     <footer>
       <div class="cre_container-flex">
+        <!-- Player Track view -->
         <div class="cre_player-track">
           <div class="cre_container-flex nested">
 
@@ -324,7 +329,9 @@
             </div>
           </div>
         </div>
+        <!-- End Player Track view -->
 
+        <!-- Player controller -->
         <div class="cre_player">
           <div class="cre_controls text-center">
             <a href="#"><i class="fas fa-random"></i></a>
@@ -340,8 +347,8 @@
             </div>
 
             <div class="cre_bar-total">
-              <span class="cre_bar-reproduced" href="#"></span>
-              <span class="cre_bar-notreproduced" href="#">
+              <span class="cre_bar-reproduced"></span>
+              <span class="cre_bar-notreproduced">
                 <i class="fas pallino fa-circle"></i>
               </span>
             </div>
@@ -352,9 +359,10 @@
 
           </div>
         </div>
+        <!-- End Player controller -->
 
+        <!-- Player Volume controller -->
         <div class="cre_player-volume">
-
           <div class="cre_container-flex cre_control-volume text-center">
 
             <div class="cre_icons-volume">
@@ -364,15 +372,15 @@
             </div>
 
             <div class="cre_bar-total">
-              <span class="cre_bar-reproduced" href="#"></span>
-              <span class="cre_bar-notreproduced" href="#">
+              <span class="cre_bar-reproduced"></span>
+              <span class="cre_bar-notreproduced">
                 <i class="fas pallino fa-circle"></i>
               </span>
             </div>
 
           </div>
-
         </div>
+        <!-- Player Volume controller -->
       </div>
     </footer>
 

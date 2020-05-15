@@ -1,6 +1,8 @@
+/* Debug */
 .debug .cre_container-flex {
   background-color: pink;
 }
+/* End Debug */
 
 /* Basic Rules */
 body {
@@ -69,8 +71,6 @@ hr {
 .cre_rounded {
   border-radius: 50%;
 }
-
-
 /* End Generic Rules */
 
 /* Buttons */
@@ -246,7 +246,7 @@ header .selected {
 }
 /* End Menù Right Music Library */
 
-
+/* Tracks */
 .tracks {
   width: 90%;
   margin: auto;
@@ -268,7 +268,6 @@ header .selected {
 .tracks [class*=col-] {
 padding: 0;
 margin: 0;
-/* min-height: 320px; */
 }
 
 .cre_single-track {
@@ -299,6 +298,7 @@ margin: 0;
 .cre_title-song p {
   color: grey;
 }
+/* End Tracks */
 
 /* Footer-Music Player */
 footer {
@@ -455,24 +455,8 @@ div.cre_bar-total:hover .cre_bar-reproduced {
 }
 /* End Footer-Music Player */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------------- */
+
 /* Media Queries MD */
 @media screen and (max-width: 1199px) {
   .cre_title-song h2 {
@@ -499,7 +483,7 @@ div.cre_bar-total:hover .cre_bar-reproduced {
     padding: 0 4px;
   }
 }
-/* ------------------------------------------------------------------------- */
+
 /* Media Queries SM */
 @media screen and (max-width: 991px) {
   .cre_player-track .box1 img {
@@ -588,3 +572,4 @@ div.cre_bar-total:hover .cre_bar-reproduced {
   .cre_icons-volume i {
     padding: 0 2px;
   }
+}
